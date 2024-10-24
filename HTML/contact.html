@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <style>
+        .buy-now-button {
+            position: absolute;
+            top: 80%;
+            /* Adjust the top value as needed to position the button vertically */
+            left: 45%;
+            /* Adjust the left value as needed to position the button horizontally */
+            transform: translate(-50%, -50%);
+            /* Center the button */
+            background-color: white;
+            padding: 10px 20px;
+            border: 1px solid #000;
+            border-radius: 5px;
+        }
+
+        .button-link {
+            text-decoration: none;
+            color: black;
+        }
+
+        .button-link:hover {
+            /* Add this rule to remove the hover effect */
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <nav class="navbar">
+        <div class="nav" style="display: flex; margin: auto;">
+            <div class="logo mx-3" style="float: left;">
+                <img src="../img/logo.png" class="brand-logo" alt="">
+            </div>
+
+            <div class="nav-items" style="float: right;">
+
+
+                <form>
+                    <div class="search">
+                        <input type="search" class="search-box" placeholder="search brand, product" aria-label="Search"
+                            name="query" id="query">
+                        <button class="search-btn">search</button>
+                    </div>
+                </form>
+
+
+
+                <li>
+
+                    <a href="cart.html" style="text-decoration: none;">[<span id="cart">4</span>] <i
+                            class="cart fa fa-shopping-cart"></i></a>
+                </li>
+
+                <li class="link-item"><a href="login.html" class="btn btn-secondary"
+                        style="background-color: rgb(248, 180, 6); color: black;">Log in</a></li>
+                <li class="link-item"><a href="signup.html" class="btn btn-secondary"
+                        style="background-color: rgb(248, 180, 6); color: black;">Sign up</a></li>
+            </div>
+        </div>
+
+        <ul class="links-container">
+            <li class="link-item"><a href="index.html" class="link">Home</a></li>
+            <li class="link-item"><a href="allproduct.html" class="link">All Products</a></li>
+
+
+            <li class="link-item dropdown">
+                <a href="#" class="link">Women</a>
+                <div class="dropdown-content">
+                    <a href="allproduct.html" class="sub-link">All</a>
+                    <a href="allproduct.html" class="sub-link">Dresses</a>
+                    <a href="allproduct.html" class="sub-link">Pants</a>
+                    <a href="allproduct.html-" class="sub-link">Skirts</a>
+                </div>
+            </li>
+
+            <li class="link-item dropdown">
+                <a href="#" class="link">Men</a>
+                <div class="dropdown-content">
+                    <a href="allproduct.html" class="sub-link">All</a>
+                    <a href="allproduct.html" class="sub-link">Dresses</a>
+                    <a href="allproduct.html" class="sub-link">Pants</a>
+                    <a href="allproduct.html" class="sub-link">Shirts</a>
+                </div>
+            </li>
+
+            <li class="link-item"><a href="allproduct.html" class="link">Kids</a></li>
+
+            <li class="link-item"><a href="contact.html" class="link">Contact</a></li>
+
+        </ul>
+    </nav>
+
+
+    <div class="container-fluid" style="padding: 30px;">
+        <h2 class="products-heading" style="margin-top: -20px;">Contact Us</h2>
+        <div class="row">
+            <!-- First Column: Image -->
+            <div class="col-md-6" style="position: relative;">
+                <img src="../img/contactus.avif" alt="Business Image" class="img-fluid" style="height: 60vh;">
+                <div class="buy-now-button">
+                    <a href="allproduct.html" class="button-link">Buy Now</a>
+                </div>
+            </div>
+
+            <!-- Second Column: Contact Form -->
+            <div class="col-md-6">
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea class="form-control" id="message" rows="4"
+                                placeholder="Type your message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary"
+                            style="background-color: rgb(248, 180, 6); color: black; width: 10vw;">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h4>Women</h4>
+                <ul>
+                    <li><a href="allproduct.html">Dresses</a></li>
+                    <li><a href="allproduct.html">Pants</a></li>
+                    <li><a href="allproduct.html">Skirts</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Men</h4>
+                <ul>
+                    <li><a href="allproduct.html">Dresses</a></li>
+                    <li><a href="allproduct.html">Pants</a></li>
+                    <li><a href="allproduct.html">Shirts</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Kids</h4>
+                <!-- Leave this section empty -->
+            </div>
+
+            <div class="footer-column">
+                <h4>Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-divider"></div>
+
+        <div class="copyright">
+            &copy; 2023 E-commerce. All rights reserved.
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

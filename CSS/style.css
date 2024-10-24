@@ -1,0 +1,382 @@
+/* Global CSS Reset and Font Settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
+}
+
+/* Styling for the Navbar */
+.navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgb(41, 41, 41);
+    z-index: 9;
+    height: 161px;
+}
+
+/* Navbar Content Layout */
+.nav {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Brand Logo Styling */
+.brand-logo {
+    height: 60px;
+}
+
+/* Styling for Navigation Items */
+.nav-items {
+    display: flex;
+    align-items: center;
+    margin-right: -117px;
+}
+
+/* Search Box Container */
+.search {
+    width: 500px;
+    display: flex;
+}
+
+/* Styling for Search Input Box */
+.search-box {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    /* border: 1px solid #d1d1d1; */
+    text-transform: capitalize;
+    background: white;
+    color: black;
+    outline: none;
+}
+
+/* Styling for Search Button */
+.search-btn {
+    width: 20%;
+    height: 40px;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: rgb(248, 180, 6);
+    color: black;
+    text-transform: capitalize;
+    font-size: 15px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* Styling for Search Input Placeholder Text */
+.search-box::placeholder {
+    color: #a9a9a9;
+}
+
+/* Styling for Navigation Links */
+.nav-items a {
+    margin-left: 25px;
+    color: rgb(248, 180, 6);
+}
+
+/* Styling for Navigation Link Images */
+.nav-items a img {
+    width: 30px;
+}
+
+/* Styling for Links Container */
+.links-container {
+    width: 100%;
+    display: flex;
+    padding: 10px 10vw;
+    justify-content: center;
+    list-style: none;
+    border-top: 1px solid #d1d1d1;
+    background-color: white;
+    
+}
+
+/* Styling for Navigation Links */
+.link {
+    text-transform: capitalize;
+    padding: 0 10px;
+    margin: 0 5px;
+    text-decoration: none;
+    color: black;
+    /* opacity: 0.5; */
+    transition: .5s;
+    font: bolder;
+}
+
+/* Styling for Hovered Navigation Links */
+.link:hover {
+    opacity: 1;
+}
+
+/* Dropdown Styles */
+/* Styling for Dropdown Container */
+.dropdown {
+    position: relative;
+    cursor: pointer;
+}
+
+/* Styling for Dropdown Content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #edfffa;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    top: 100%;
+    left: 0;
+}
+
+/* Display Dropdown Content on Hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Styling for Sub-Links within Dropdown */
+.sub-link {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #383838;
+    opacity: 0.5;
+    transition: 0.5s;
+    text-transform: capitalize;
+}
+
+/* Styling for Hovered Sub-Links */
+.sub-link:hover {
+    opacity: 1;
+}
+
+/* Footer Styles */
+/* Styling for the Footer */
+.footer {
+    background: rgb(41, 41, 41);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Footer Container Layout */
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* Styling for Footer Columns */
+.footer-column {
+    flex: 1;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align text within each column */
+}
+
+/* Styling for Footer Column Headings */
+.footer-column h4 {
+    font-weight: bold;
+}
+
+/* Styling for Unordered Lists in Footer Columns */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Styling for List Items in Footer Columns */
+ul li {
+    margin: 10px 0; /* Add proper margin */
+    text-align: center; /* Center align the links within the column */
+    color: white;
+}
+
+/* Styling for Footer Links */
+ul li a {
+    text-decoration: none; /* Remove underline */
+    color: white; /* Set the link color */
+    padding: 5px 0; /* Add proper padding */
+    display: block; /* Make the links block-level for padding */
+    transition: 0.5s;
+    margin-right: 37px;
+}
+
+/* Styling for Hovered Footer Links */
+ul li a:hover {
+    opacity: 1;
+}
+
+/* Styling for Footer Divider */
+.footer-divider {
+    border-top: 1px solid #d1d1d1;
+    margin: 20px 0;
+}
+
+/* Styling for Copyright Notice */
+.copyright {
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+/* Hero Section Styles */
+/* Styling for the Hero Section */
+.hero-section {
+    width: 100%;
+    height: calc(100vh - 220px);
+    background-image: url("../img/fontpageimg.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Styling for Logo in Hero Section */
+.hero-section .logo {
+    height: 250px;
+    display: block;
+    margin: auto;
+}
+
+/* Styling for Sub-Heading in Hero Section */
+.hero-section .sub-heading {
+    margin-top: 10px;
+    text-align: center;
+    color: #ffff;
+    text-transform: capitalize;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    width: max-content;
+    padding: 15px;
+    border-radius: 30px;
+}
+
+/* Product Container Styles */
+/* Styling for the Product Container */
+.product-container {
+    display: flex;
+    scroll-behavior: smooth;
+    margin-left: 20px;
+}
+
+/* Hide Scrollbars in Product Container */
+.product-container::-webkit-scrollbar {
+    display: none;
+}
+
+/* Styling for Product Cards */
+.product-card {
+    flex: 0 0 auto;
+    width: 300px;
+    height: 580px;
+    margin-left: 40px;
+    padding: 8px;
+}
+
+/* Styling for Product Images */
+.product-image {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Styling for Product Thumbnails */
+.product-thumb {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+/* Styling for Discount Tags on Product Cards */
+.discount-tag {
+    position: absolute;
+    background: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    color: #ff7d7d;
+    right: 10px;
+    top: 10px;
+    text-transform: capitalize;
+}
+
+/* Styling for Buttons on Product Cards */
+.card-btn {
+    transform: translateX(-50%);
+    padding: 10px;
+    width: 85%;
+    text-transform: capitalize;
+    border: 2px solid black;
+    outline: none;
+    border-radius: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+    color: black;
+}
+
+/* Styling for Hovered Buttons on Product Cards */
+.product-card:hover .card-btn {
+    opacity: 1;
+}
+
+/* Styling for Product Information Section */
+.product-info {
+    width: 100%;
+    height: 100px;
+    padding-top: 10px;
+}
+
+/* Styling for Product Brand Name */
+.product-brand {
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+/* Styling for Product Short Description */
+.product-short-des {
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    opacity: 0.5;
+    text-transform: capitalize;
+    margin: 5px 0;
+}
+
+/* Styling for Product Price */
+.price {
+    font-weight: 900;
+    font-size: 20px;
+}
+
+/* Styling for Product Actual Price */
+.actual-price {
+    margin-left: 20px;
+    opacity: 0.5;
+    text-decoration: line-through;
+}
+
+/* Styling for the "All Products" Heading */
+.products-heading {
+    font-family: 'Fancy Font', 'cursive'; /* Use your desired fancy font or Google Font */
+    font-size: 3rem;
+    color: #383838; /* Set your desired text color */
+    text-align: center;
+    margin-bottom: 20px; /* Add margin for spacing */
+    margin-top: 20px;
+}
+
+/* Styling for the Login Form */
+.login-form-class {
+    margin: 50px;
+}
